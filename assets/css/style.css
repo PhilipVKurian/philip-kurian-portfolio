@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: #f5daf8;
+}
+
+header {
+    padding: 20px;
+    background-color: #47214b;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+nav {
+    float: right; 
+    margin-right: 20px;       
+    padding-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#banner {
+    background-image: url("../images/purple-banner.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+#banner >img{
+    float: left;
+    width: 27%;
+    height: 400px;
+    object-fit: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article {
+    display: flex;
+    padding: 50px;
+    background-color: #754e7e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+.heading {
+    width: 25%;
+    margin-left: 20px;
+    border-style: none solid none none;
+}
+
+.heading h1 {
+    float: right;
+    margin-right: 30px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-large {
+    position: relative;
+    padding: 0.5%;
+  }
+
+.card-large a > img {
+    object-fit: none;
+    max-width: 100%;   
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #47214b;    
+}
+
+.card-large:hover p{
+    visibility: visible;
+}
+
+.card-large > p{
+    visibility: hidden;
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    max-width: fit-content;
+    padding: 3%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #6e3b7a;  
+    background-color: #47214b;
+}
+
+.card-small-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-small{
+    text-align: justify;
+    flex: 40%;    
+}
+
+.card-small p{
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+    padding: 1%;
+    max-width: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #47214b; 
+    align-self: flex-start;  
+    background-color: #47214b; 
+}
+
+.card-small img{  
+    object-fit: none;
+    display: block; 
+    max-width: 90%;
+    margin-top: 2%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #47214b;
+ 
+}
+
+.float-left {
+    float: left;    
+    margin-right: 15px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:800px){
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading{
+        width: auto;
+        border-style: none solid solid none;
+    }
+
+    #philip{
+        display: none;
+    }
+    .content {
+        align-self: center;
+        width: 100%;
+    }
+
+    .card-small-flexbox {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:467px) {
+
+    header{
+        display: flex;
+        flex-direction: row;;
+
+    }
+    nav ul{
+        flex-direction: column;
+        float: right;
+    }
+
+    .card-small-flexbox {
+        display: block;
+    }
+
+    .card-large > p{
+        font-size: small;
+    }
+    
+}
