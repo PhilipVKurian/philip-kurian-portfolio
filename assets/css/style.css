@@ -157,6 +157,7 @@ a {
     position: relative;
     bottom: 30px;
     left: 0px;
+    visibility: hidden;
     align-self: flex-start;      
     max-width: fit-content;    
     padding: 1%;
@@ -174,6 +175,10 @@ a {
     border-style: solid;
     border-width: 5px;
     border-color: var(--darkpurple); 
+}
+
+.card-small:hover p{
+    visibility: visible;
 }
 
 #contact .content {
