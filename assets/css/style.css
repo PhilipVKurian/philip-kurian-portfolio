@@ -20,7 +20,6 @@ header h1 {
     font-size: 48px;
 }
 
-
 nav {
     float: right; 
     margin-right: 20px;       
@@ -56,6 +55,11 @@ a {
     text-decoration: none;
 }
 
+#bold {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 .article {
     display: flex;
     padding: 50px;
@@ -83,10 +87,25 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.content p{
+    font-size: larger;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.content ul {
+    margin-bottom: 20px;
+}
+
+.content li{
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
 .card-large {
     position: relative;
     padding: 0.5%;
-  }
+}
 
 .card-large a > img {
     object-fit: none;
@@ -149,16 +168,17 @@ a {
     border-color: #47214b;
  
 }
-
-.float-left {
-    float: left;    
-    margin-right: 15px;
+#contact .content {
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.float-right {
-    float: right;
-    margin-left: 15px;
-}
+#contact .content a{
+    font-size: large;
+    font-weight: bold;    
+    border-style: none none solid none;
+} 
 
 @media screen and (max-width:800px){
     .article{
@@ -178,6 +198,10 @@ a {
         align-self: center;
         width: 100%;
     }
+    
+    .content li {
+        margin-right: 10px;
+    }
 
     .card-small-flexbox {
         display: block;
@@ -185,16 +209,18 @@ a {
 
 }
 
-@media screen and (max-width:467px) {
+@media screen and (max-width:520px) {
 
     header{
         display: flex;
         flex-direction: row;;
 
     }
-    nav ul{
-        flex-direction: column;
-        float: right;
+    .content ul{
+        margin-top: 10px;
+    }
+    .content li{
+        margin-left: 5px;      
     }
 
     .card-small-flexbox {
@@ -204,5 +230,11 @@ a {
     .card-large > p{
         font-size: small;
     }
-    
+
+    #contact .content {
+        display: block;   
+    }
+    #contact .content a{
+        margin-right: 10px;
+    }
 }
