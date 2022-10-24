@@ -1,3 +1,10 @@
+:root {
+    --white:#f5daf8;
+    --darkpurple:#47214b; 
+    --lightpurple:#683a6d;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +12,14 @@
 }
 
 body {
-    background-color: #f5daf8;
+    background-color: var(--white);
 }
 
 header {
     padding: 20px;
-    background-color: #47214b;    
+    background-color: #47214b; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
+    color: var(--white);
 }
 
 header h1 {
@@ -43,7 +50,7 @@ nav ul li {
     overflow: hidden;
 }
 
-#banner >img{
+#banner >img {
     float: left;
     width: 27%;
     height: 400px;
@@ -51,7 +58,7 @@ nav ul li {
 }
 
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -63,9 +70,9 @@ a {
 .article {
     display: flex;
     padding: 50px;
-    background-color: #754e7e;
+    background-color: var(--lightpurple);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .heading {
@@ -87,19 +94,20 @@ a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.content p{
+.content p { 
+    margin-bottom: 20px;    
     font-size: larger;
     line-height: 1.5;
-    margin-bottom: 20px;
 }
+
 .content ul {
     margin-bottom: 20px;
 }
 
-.content li{
+.content li {
+    margin-left: 80px;    
     font-size: larger;
     font-weight: bold;
-    margin-left: 80px;
 }
 
 .card-large {
@@ -109,29 +117,29 @@ a {
 
 .card-large a > img {
     object-fit: none;
-    max-width: 100%;   
-    background-color: white;
+    max-width: 100%;  
     border-style: solid;
     border-width: 5px;
-    border-color: #47214b;    
+    border-color: var(--darkpurple);
+    background-color: var(--white); 
 }
 
-.card-large:hover p{
+.card-large:hover p {
     visibility: visible;
 }
 
-.card-large > p{
-    visibility: hidden;
-    position: absolute;
+.card-large > p {
+    position: absolute; 
     bottom: 8px;
-    left: 4px;
+    left: 4px;     
+    visibility: hidden;
     max-width: fit-content;
     padding: 3%;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    border-color: #6e3b7a;  
-    background-color: #47214b;
+    background-color: var(--darkpurple);
+    border-color: var(--darkpurple);  
 }
 
 .card-small-flexbox {
@@ -140,58 +148,58 @@ a {
     justify-content: space-between;
 }
 
-.card-small{
-    text-align: justify;
-    flex: 40%;    
+.card-small {
+    flex: 40%;     
+    text-align: justify;   
 }
 
-.card-small p{
+.card-small p {
     position: relative;
     bottom: 30px;
     left: 0px;
+    align-self: flex-start;      
+    max-width: fit-content;    
     padding: 1%;
-    max-width: fit-content;
     border-style: solid;
     border-width: 1px;
-    border-color: #47214b; 
-    align-self: flex-start;  
-    background-color: #47214b; 
+    border-color: var(--darkpurple); 
+    background-color: var(--darkpurple); 
 }
 
-.card-small img{  
+.card-small img {  
     object-fit: none;
-    display: block; 
+    display: block;     
     max-width: 90%;
     margin-top: 2%;
     border-style: solid;
     border-width: 5px;
-    border-color: #47214b;
- 
+    border-color: var(--darkpurple); 
 }
+
 #contact .content {
     display: flex;   
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-#contact .content a{
+#contact .content a {
+    border-style: none none solid none;    
     font-size: large;
-    font-weight: bold;    
-    border-style: none none solid none;
+    font-weight: bold; 
 } 
 
 @media screen and (max-width:800px){
-    .article{
+    .article {
         display: flex;
         flex-direction: column;
     }
 
-    .heading{
+    .heading {
         width: auto;
         border-style: none solid solid none;
     }
 
-    #philip{
+    #philip {
         display: none;
     }
     .content {
@@ -206,35 +214,35 @@ a {
     .card-small-flexbox {
         display: block;
     }
-
 }
 
 @media screen and (max-width:520px) {
-
-    header{
+    header {
         display: flex;
         flex-direction: row;;
 
     }
-    .content ul{
+
+    .content ul {
         margin-top: 10px;
     }
-    .content li{
+
+    .content li {
         margin-left: 5px;      
+    }
+
+    .card-large > p {
+        font-size: small;
     }
 
     .card-small-flexbox {
         display: block;
     }
 
-    .card-large > p{
-        font-size: small;
-    }
-
     #contact .content {
         display: block;   
     }
-    #contact .content a{
+    #contact .content a {
         margin-right: 10px;
     }
 }
