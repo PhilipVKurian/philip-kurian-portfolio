@@ -16,7 +16,6 @@ body {
 }
 
 header {
-    padding: 20px;
     background-color: #47214b; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--white);
@@ -27,21 +26,43 @@ header h1 {
     font-size: 48px;
 }
 
-nav {
-    float: right; 
-    margin-right: 20px;       
-    padding-top: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+.navbar{
+    background-color: #47214b;
+    padding: 5px;
 }
 
-nav ul {
-    list-style-type: none;
+p.navbar-item{
+    color: var(--white);
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+.navbar-burger{
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px  solid  var(--white);    
+}
+
+.navbar-burger span{
+    color: #f5daf8;
+}
+a.navbar-item{
+    font-size: larger;
+}
+
+a.navbar-item:hover{
+    background-color: var(--lightpurple);
+    color: var(--white)
+}
+
+.navbar-menu{
+    background-color: #47214b;    
+}
+
+.navbar-end{
+    min-height: fit-content;
+}
+
+.navbar-end a {
+    color: var(--white)
 }
 
 #banner {
@@ -92,6 +113,10 @@ a {
     width: 70%;
     padding: 20px;    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content h2 {
+    color: var(--white);
 }
 
 .content p { 
@@ -194,9 +219,19 @@ a {
 } 
 
 @media screen and (max-width:800px){
+    #about{
+        padding-top: 30px;
+    }
+
+    .heading h1{
+        float: left;
+    }
     .article {
         display: flex;
         flex-direction: column;
+        padding-left: 10px;
+        padding-bottom: 0px;
+        padding-top: 10px;
     }
 
     .heading {
@@ -222,18 +257,13 @@ a {
 }
 
 @media screen and (max-width:520px) {
-    header {
-        display: flex;
-        flex-direction: row;;
 
+    .article{
+        padding: 10px;
     }
 
-    .content ul {
-        margin-top: 10px;
-    }
-
-    .content li {
-        margin-left: 5px;      
+    .content ul{
+        margin-left: 0px;
     }
 
     .card-large > p {

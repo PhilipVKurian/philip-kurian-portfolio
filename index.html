@@ -1,91 +1,108 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="reset" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Portfolio-Philip Kurian</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="https://kit.fontawesome.com/411e09558c.js" crossorigin="anonymous"></script>
+        <link rel="reset" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Portfolio-Philip Kurian</title>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <h1>Philip</h1>
-        <nav>            
-            <ul>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <header>
 
-    <div id ="banner">
-        <img src="./assets/images/profile.PNG" id ="philip" alt="The coder" />
-    </div>
-
-    <main>
-        <article class="article" id="about">
-            <aside class="heading">
-                <h1>About Me</h1>
-            </aside>
-            <section class="content">
-                <p>I'm an aspiring web developer with many ideas. I've been facinated by computers since I was a kid and that has led me to pursue a career in web development.</p>
-                <h2 id = "bold">My skills include:</h2>
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript and JQuery</li>
-                    <li>Database design with Oracle PL/SQL and mongo.db</li>
-                    <li>Java C# and Python programming</li>                    
-                </ul>
-                <p>I am constantly learning as i move forward with my journey! This portfolio site will be updated to showcase my newest creations!</p>
-            </section>
-        </article>     
-        
-        <article class="article" id="work">
-            <aside class="heading">
-                <h1>Work</h1>
-            </aside>
-            <section class="content">
-                <div class="card-large">
-                    <a href="https://philipvkurian.github.io/PhilipVKurian-module-1-challenge/">
-                        <img src="./assets/images/refactoring.PNG" alt="website optimized" />
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                    <p class="navbar-item is-size-2">
+                        Philip
+                    </p>  
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
-                    <p id="card-large-text">HTML/CSS Code Refactor</p>   
-                </div>  
-                <div class="card-small-flexbox">
-                    <div class="card-small">
-                        <a href="https://philipvkurian.github.io/weather-prepared/">
-                        <img src="https://user-images.githubusercontent.com/114792819/204135868-9070151e-94cd-4901-bb75-07b478d50e83.png" 
-                         alt="placeholder image" /> 
-                        </a>
-                        <p>Weather Prepared</p>          
                     </div>
-                            
-                </div>                
-            </section>
-        </article>
+                    <div class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="#about" class="navbar-item">About</a>
+                            <a href="#work" class="navbar-item">Work</a>
+                            <a href="#contact" class="navbar-item">Contact</a>
+                        </div>
+                    </div>
+            </nav>
 
-        <article class="article" id="contact">
-            <aside class="heading">
-                <h1>Contact Me</h1>
-            </aside>
-            <section class="content">
-                <a>222-222-2222</a>
-                <a>philipvkurian@gmail.com</a>
-                <a href="https://github.com/PhilipVKurian">GitHub</a>
-            </section>
-        </article>
-    </main>
+        </header>
 
-</body>
+        <div id ="banner">
+            <img src="./assets/images/profile.PNG" id ="philip" alt="The coder" />
+        </div>
+
+        <main>
+            <article class="article" id="about">
+                <aside class="heading">
+                    <h1>About Me</h1>
+                </aside>
+                <section class="content">
+                    <p>I'm an aspiring web developer with many ideas. I've been facinated by computers and how they work since I was a young and this has led me to pursue a career in web development.</p>
+                    <h2>Interests:</h2>
+                    <ul>
+                        <li>I have an inclination towards elegant and functional design.</li>
+                        <li>I enjoy working with others and learning new/efficient ways of performing tasks.</li>
+                    </ul>   
+                    <h2>My skills include:</h2>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript and JQuery</li>
+                        <li>Database design with Oracle PL/SQL and mongo.db</li>
+                        <li>Java C# and Python programming</li>                    
+                    </ul>
+                    <p>I am constantly learning as i move forward with my journey! This portfolio site will showcase my upcoming and completed projects</p>
+                </section>
+            </article>     
+            
+            <article class="article" id="work">
+                <aside class="heading">
+                    <h1>Work</h1>
+                </aside>
+                <section class="content">
+                    <div class="card-large">
+                        <a href="https://philipvkurian.github.io/PhilipVKurian-module-1-challenge/">
+                            <img src="./assets/images/refactoring.PNG" alt="website optimized" />
+                        </a>
+                        <p id="card-large-text">HTML/CSS Code Refactor</p>   
+                    </div>  
+                    <div class="card-small-flexbox">
+                        <div class="card-small">
+                            <a href="https://philipvkurian.github.io/weather-prepared/">
+                            <img src="https://user-images.githubusercontent.com/114792819/204135868-9070151e-94cd-4901-bb75-07b478d50e83.png" 
+                            alt="placeholder image" /> 
+                            </a>
+                            <p>Weather Prepared</p>          
+                        </div>
+                                
+                    </div>                
+                </section>
+            </article>
+
+            <article class="article" id="contact">
+                <aside class="heading">
+                    <h1>Contact Me</h1>
+                </aside>
+                <section class="content">
+                    <a>222-222-2222</a>
+                    <a>philipvkurian@gmail.com</a>
+                    <a href="https://github.com/PhilipVKurian">GitHub</a>
+                </section>
+            </article>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+        crossorigin="anonymous"></script>
+        <script src="assets/scripts/nav.js"></script>
+    </body>
 
 </html>
